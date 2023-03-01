@@ -11,6 +11,7 @@
 		081AA3A329AF80220074C354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AA3A229AF80220074C354 /* ViewController.swift */; };
 		081AA3A829AF80240074C354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081AA3A729AF80240074C354 /* Assets.xcassets */; };
 		081AA3AB29AF80240074C354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081AA3A929AF80240074C354 /* LaunchScreen.storyboard */; };
+		F2229282EF96B4BAEB59F13C /* Pods_Pixasearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE7E90FB404B8CDAA1A43BA /* Pods_Pixasearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		081AA3A729AF80240074C354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081AA3AA29AF80240074C354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081AA3AC29AF80240074C354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D567692E55F5F7C6792FCC1 /* Pods-Pixasearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixasearch.release.xcconfig"; path = "Target Support Files/Pods-Pixasearch/Pods-Pixasearch.release.xcconfig"; sourceTree = "<group>"; };
+		2E8FBEFA1BF989A20C924AAE /* Pods-Pixasearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixasearch.debug.xcconfig"; path = "Target Support Files/Pods-Pixasearch/Pods-Pixasearch.debug.xcconfig"; sourceTree = "<group>"; };
+		9FE7E90FB404B8CDAA1A43BA /* Pods_Pixasearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixasearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2229282EF96B4BAEB59F13C /* Pods_Pixasearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				081AA39D29AF80220074C354 /* Pixasearch */,
 				081AA39C29AF80220074C354 /* Products */,
+				F66EB3BD0ED5788836005018 /* Pods */,
+				BAFC2ACB74964B5510A18564 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,24 @@
 			path = Pixasearch;
 			sourceTree = "<group>";
 		};
+		BAFC2ACB74964B5510A18564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7E90FB404B8CDAA1A43BA /* Pods_Pixasearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F66EB3BD0ED5788836005018 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E8FBEFA1BF989A20C924AAE /* Pods-Pixasearch.debug.xcconfig */,
+				1D567692E55F5F7C6792FCC1 /* Pods-Pixasearch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,10 +93,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081AA3AF29AF80240074C354 /* Build configuration list for PBXNativeTarget "Pixasearch" */;
 			buildPhases = (
+				C063434E1828FC34EEF29769 /* [CP] Check Pods Manifest.lock */,
 				087D854729AF885C0008FE8E /* SwiftLint */,
 				081AA39729AF80220074C354 /* Sources */,
 				081AA39829AF80220074C354 /* Frameworks */,
 				081AA39929AF80220074C354 /* Resources */,
+				559BFAE1CD0D610390159552 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		559BFAE1CD0D610390159552 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixasearch/Pods-Pixasearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixasearch/Pods-Pixasearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixasearch/Pods-Pixasearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C063434E1828FC34EEF29769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixasearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -289,6 +355,7 @@
 		};
 		081AA3B029AF80240074C354 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8FBEFA1BF989A20C924AAE /* Pods-Pixasearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +384,7 @@
 		};
 		081AA3B129AF80240074C354 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D567692E55F5F7C6792FCC1 /* Pods-Pixasearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
