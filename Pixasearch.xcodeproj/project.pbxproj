@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		081AA39F29AF80220074C354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AA39E29AF80220074C354 /* AppDelegate.swift */; };
-		081AA3A329AF80220074C354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AA3A229AF80220074C354 /* ViewController.swift */; };
+		081AA3A329AF80220074C354 /* WelcomeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AA3A229AF80220074C354 /* WelcomeSearchViewController.swift */; };
 		081AA3A829AF80240074C354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081AA3A729AF80240074C354 /* Assets.xcassets */; };
 		081AA3AB29AF80240074C354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081AA3A929AF80240074C354 /* LaunchScreen.storyboard */; };
+		087D855329AFC3AD0008FE8E /* OpenSansSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 087D854F29AFC3AD0008FE8E /* OpenSansSemiBold.ttf */; };
+		087D855629AFC3AD0008FE8E /* OpenSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 087D855229AFC3AD0008FE8E /* OpenSansRegular.ttf */; };
+		087D855829AFF6490008FE8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D855729AFF6490008FE8E /* Constants.swift */; };
 		F2229282EF96B4BAEB59F13C /* Pods_Pixasearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE7E90FB404B8CDAA1A43BA /* Pods_Pixasearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		081AA39B29AF80220074C354 /* Pixasearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixasearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081AA39E29AF80220074C354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		081AA3A229AF80220074C354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		081AA3A229AF80220074C354 /* WelcomeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSearchViewController.swift; sourceTree = "<group>"; };
 		081AA3A729AF80240074C354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081AA3AA29AF80240074C354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081AA3AC29AF80240074C354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087D854F29AFC3AD0008FE8E /* OpenSansSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSansSemiBold.ttf; sourceTree = "<group>"; };
+		087D855229AFC3AD0008FE8E /* OpenSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSansRegular.ttf; sourceTree = "<group>"; };
+		087D855729AFF6490008FE8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1D567692E55F5F7C6792FCC1 /* Pods-Pixasearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixasearch.release.xcconfig"; path = "Target Support Files/Pods-Pixasearch/Pods-Pixasearch.release.xcconfig"; sourceTree = "<group>"; };
 		2E8FBEFA1BF989A20C924AAE /* Pods-Pixasearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixasearch.debug.xcconfig"; path = "Target Support Files/Pods-Pixasearch/Pods-Pixasearch.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE7E90FB404B8CDAA1A43BA /* Pods_Pixasearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixasearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,12 +66,39 @@
 			isa = PBXGroup;
 			children = (
 				081AA39E29AF80220074C354 /* AppDelegate.swift */,
-				081AA3A229AF80220074C354 /* ViewController.swift */,
-				081AA3A729AF80240074C354 /* Assets.xcassets */,
+				087D855729AFF6490008FE8E /* Constants.swift */,
+				081AA3A229AF80220074C354 /* WelcomeSearchViewController.swift */,
+				087D854D29AFC3790008FE8E /* Resources */,
+				087D854B29AFC1A20008FE8E /* SupportingFiles */,
+			);
+			path = Pixasearch;
+			sourceTree = "<group>";
+		};
+		087D854B29AFC1A20008FE8E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				081AA3A929AF80240074C354 /* LaunchScreen.storyboard */,
 				081AA3AC29AF80240074C354 /* Info.plist */,
 			);
-			path = Pixasearch;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		087D854D29AFC3790008FE8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				087D854E29AFC3AD0008FE8E /* Fonts */,
+				081AA3A729AF80240074C354 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		087D854E29AFC3AD0008FE8E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				087D854F29AFC3AD0008FE8E /* OpenSansSemiBold.ttf */,
+				087D855229AFC3AD0008FE8E /* OpenSansRegular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		BAFC2ACB74964B5510A18564 /* Frameworks */ = {
@@ -82,7 +115,6 @@
 				2E8FBEFA1BF989A20C924AAE /* Pods-Pixasearch.debug.xcconfig */,
 				1D567692E55F5F7C6792FCC1 /* Pods-Pixasearch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				081AA3AB29AF80240074C354 /* LaunchScreen.storyboard in Resources */,
+				087D855329AFC3AD0008FE8E /* OpenSansSemiBold.ttf in Resources */,
 				081AA3A829AF80240074C354 /* Assets.xcassets in Resources */,
+				087D855629AFC3AD0008FE8E /* OpenSansRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081AA3A329AF80220074C354 /* ViewController.swift in Sources */,
+				081AA3A329AF80220074C354 /* WelcomeSearchViewController.swift in Sources */,
 				081AA39F29AF80220074C354 /* AppDelegate.swift in Sources */,
+				087D855829AFF6490008FE8E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

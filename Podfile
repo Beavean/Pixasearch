@@ -6,8 +6,8 @@ target 'Pixasearch' do
   use_frameworks!
 
   # Pods for Pixasearch
-  pod 'R.swift'
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod 'DropDown'
 
 end
